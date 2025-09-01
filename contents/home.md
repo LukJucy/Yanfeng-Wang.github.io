@@ -1,20 +1,30 @@
 [![XX](https://img.shields.io/badge/XX-github-blue?logo=github)](https://github.com/XX)
 
-I'm currently pursuing a Master's degree in XX at the Department of XX, XX University, XX.
+I'm currently pursuing a PhD's degree in Electronic and Electrical Engineering at the School of Engineering, Trinity College Dublin, Dublin, Ireland.
 
-#### Email  
-<code>XX@XX.XX</code>  
-<code>XX@XX.XX</code>
+#### Email
 
-#### Education  
-**XX University**, Master of XX (XX – XX)  
-• GPA: XX/XX  
+wangy82@tcd.ie
+yfangwang329@qq.com
 
-**XX University**, Exchange student <br>  
-• As a XX, represented my college as an outstanding student for a XX exchange program.  
+#### Education
 
-**XX University**, Honours Bachelor of XX (XX – XX)  
-• GPA: XX/XX (top XX%)  
+**Huazhong University of Science and Technology(HUST)**, Wuhan in China, Master of New Energy Science and Technology (2021 – 2024)
 
-#### Research Interests  
-XX, XX, XX, XX.
+• Under the supervision of Prof. Ba from Peking University and Prof. Yang from School of Energy and Power Engineering in HUST, I took researches in carbon market and price, CBAM, renwable energy system and AI algorithms.
+
+**Paris-Science-Lettre Research University(PSL)**, Pairs in France, Master of Clean and Renewable Energy(2021 – 2024)
+
+• A dual-degree in ICARE
+
+**Northumbria University****, Newcastle in UK, Visiting master student (July, 2023- Dec, 2023)
+
+• As a visiting master student funded by CSC, conducted a European Carbon Trading Market project under the supervision of me, Dr. Lu Xing in the Department of Mechanical and Construction Engineering.
+
+&#x20;**University of Shanghai for Science and Technology****, Bachelor of New Energy Science and Technology (2017 – 2021)
+
+
+
+#### Research Interests
+
+Energy system, Artificial intelligence(DRL and ML), Climate change, Carbon footprint, Green Policy
