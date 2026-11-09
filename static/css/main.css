@@ -128,3 +128,5 @@ footer a{display:inline-block;margin-top:.5rem}
 
 
 .social-link[href*="orcid.org"] .social-icon{color:#a6ce39}.social-link[href*="linkedin.com"] .social-icon{color:#0077b5}
+
+@media(min-width:851px){.profile{max-height:calc(100dvh - 8rem);overflow-y:auto;scrollbar-width:thin;padding-bottom:1rem}}
