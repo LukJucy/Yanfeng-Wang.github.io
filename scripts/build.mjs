@@ -1,3 +1,4 @@
+import { createHash } from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -39,6 +40,7 @@ const renderInterests = items => items.map(item => `<article class="interest-ite
 export function renderHomepage(data, template) {
   const p = data.profile, h = data.hero;
   const replacements = {
+    'style.version': createHash('sha256').update(fs.readFileSync(path.join(root, 'static/css/main.css'))).digest('hex').slice(0,12),
     'profile.email_link': p.email ? `<a class="social-link" href="mailto:${safeEmail(p.email)}">${iconSvg('email')}<span>${safeEmail(p.email)}</span></a>` : '',
     'profile.secondary_email_link': p.secondary_email ? `<a class="social-link" href="mailto:${safeEmail(p.secondary_email)}">${iconSvg('email')}<span>${safeEmail(p.secondary_email)}</span></a>` : '',
     'profile.github_link': socialLink('GitHub', p.github, 'github'),
