@@ -1,0 +1,47 @@
+{
+  "profile": {
+    "name": "Yanfeng Wang",
+    "chinese_name": "王彦峰",
+    "label": "Academic researcher",
+    "role": "PhD Researcher",
+    "department": "Electronic & Electrical Engineering",
+    "school": "School of Engineering",
+    "university": "Trinity College Dublin",
+    "location": "Dublin, Ireland",
+    "photo": "static/assets/img/photo.jpg",
+    "email": "wangy82@tcd.ie",
+    "secondary_email": "yfangwang329@qq.com",
+    "github": "https://github.com/LukJucy"
+  },
+  "hero": {
+    "eyebrow": "Welcome",
+    "title": "Researching energy systems\nand climate policy.",
+    "description": "I am a PhD researcher in Electronic and Electrical Engineering at Trinity College Dublin. My research interests include energy systems, artificial intelligence (deep reinforcement learning and machine learning), climate change, carbon footprints and green policy.",
+    "primary_label": "Explore my work",
+    "contact_label": "Get in touch"
+  },
+  "research": [
+    {"title": "Energy systems", "description": "Energy systems and renewable energy."},
+    {"title": "Artificial intelligence", "description": "Deep learning, machine learning and deep reinforcement learning."},
+    {"title": "Climate & carbon", "description": "Carbon markets, carbon footprints and evidence for green policy."}
+  ],
+  "publications": [
+    {"year": "2024", "title": "A novel carbon emission estimation method based on electricity–carbon nexus and non-intrusive load monitoring.", "authors": "Xia Y, Sun G, Wang Y, Yang Q, Wang Q, Ba S.", "venue": "Applied Energy", "details": "360, 122773.", "url": "https://doi.org/10.1016/j.apenergy.2024.122773", "corresponding": false},
+    {"year": "2024", "title": "CO2 Emission Prediction for Coal-Fired Power Plants by Random Forest–Recursive Feature Elimination–Deep Forest–Optuna Framework.", "authors": "Tu K, Wang Y, Li X, Wang X, Hu Z, Luo B, et al.", "venue": "Energies", "details": "17, 6449.", "url": "https://doi.org/10.3390/en17246449", "corresponding": false},
+    {"year": "2023", "title": "A novel deep learning carbon price short term prediction model with dual-stage attention mechanism.", "authors": "Wang Y, Qin L, Wang Q, Chen Y, Yang Q, Xing L, et al.", "venue": "Applied Energy", "details": "347, 121380.", "url": "https://doi.org/10.1016/j.apenergy.2023.121380", "corresponding": false},
+    {"year": "2023", "title": "Distributed photovoltaic power forecast methods: A review.", "authors": "Wang H, Zhou B, Deng W, Dai Z, Li C, Lu S, Wang Y.", "venue": "IEEE ICPS Asia 2023", "details": "805–809.", "url": "https://doi.org/10.1109/ICPSAsia58343.2023.10294618", "corresponding": true},
+    {"year": "2023", "title": "A deep learning carbon price prediction model based on fossil fuel price.", "authors": "", "venue": "ICAESEE 2023", "details": "Conference poster.", "url": "", "corresponding": false}
+  ],
+  "experience": [
+    {"period": "Current", "institution": "Trinity College Dublin", "description": "PhD in Electronic and Electrical Engineering\nDublin, Ireland"},
+    {"period": "2021–2024", "institution": "Huazhong University of Science and Technology", "description": "Master of New Energy Science and Technology · Wuhan, China\nResearch on carbon markets and prices, CBAM, renewable energy systems and AI algorithms, supervised by Prof. Ba (Peking University) and Prof. Yang (HUST)."},
+    {"period": "2021–2024", "institution": "Paris Sciences et Lettres (PSL)", "description": "Master of Clean and Renewable Energy · Dual-degree ICARE"},
+    {"period": "Jul–Dec 2023", "institution": "Northumbria University", "description": "Visiting master student · Newcastle, UK\nCSC-funded research on the European carbon trading market with Dr. Lu Xing, Department of Mechanical and Construction Engineering."},
+    {"period": "Oct–Nov 2024", "institution": "Tianjin Climate Exchange", "description": "Carbon Footprint Intern · Carbon accounting, policy and data analysis."},
+    {"period": "2017–2021", "institution": "University of Shanghai for Science and Technology", "description": "Bachelor of New Energy Science and Technology"}
+  ],
+  "awards": [
+    {"title": "University-level Second-class Scholarship", "details": "2021 · 2022 · 2023"},
+    {"title": "China Scholarship Council (CSC) scholarship", "details": "Academic visiting · 2023"}
+  ]
+}

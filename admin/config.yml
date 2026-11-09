@@ -1,0 +1,244 @@
+{
+  "backend": {
+    "name": "turbo-github",
+    "turbo_site_id": "",
+    "branch": "main"
+  },
+  "locale": "zh_Hans",
+  "site_url": "https://lukjucy.github.io/Yanfeng-Wang.github.io/",
+  "display_url": "https://lukjucy.github.io/Yanfeng-Wang.github.io/",
+  "media_folder": "static/assets/uploads",
+  "public_folder": "static/assets/uploads",
+  "collections": [
+    {
+      "name": "homepage",
+      "label": "学术主页",
+      "label_singular": "学术主页",
+      "files": [
+        {
+          "name": "homepage",
+          "label": "主页内容",
+          "file": "content/homepage.json",
+          "format": "json",
+          "fields": [
+            {
+              "name": "profile",
+              "label": "个人资料",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "name",
+                  "label": "英文姓名",
+                  "widget": "string"
+                },
+                {
+                  "name": "chinese_name",
+                  "label": "中文姓名",
+                  "widget": "string"
+                },
+                {
+                  "name": "label",
+                  "label": "身份标签",
+                  "widget": "string"
+                },
+                {
+                  "name": "role",
+                  "label": "职位 / 学位",
+                  "widget": "string"
+                },
+                {
+                  "name": "department",
+                  "label": "专业 / 系",
+                  "widget": "string"
+                },
+                {
+                  "name": "school",
+                  "label": "学院",
+                  "widget": "string"
+                },
+                {
+                  "name": "university",
+                  "label": "学校",
+                  "widget": "string"
+                },
+                {
+                  "name": "location",
+                  "label": "所在城市",
+                  "widget": "string"
+                },
+                {
+                  "name": "photo",
+                  "label": "头像",
+                  "widget": "image"
+                },
+                {
+                  "name": "email",
+                  "label": "主要邮箱",
+                  "widget": "string"
+                },
+                {
+                  "name": "secondary_email",
+                  "label": "备用邮箱",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "github",
+                  "label": "GitHub 个人主页",
+                  "widget": "string",
+                  "pattern": [
+                    "^https://github\\.com/[^\\s]+$",
+                    "请填写完整的 GitHub HTTPS 网址"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "hero",
+              "label": "首页简介",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "eyebrow",
+                  "label": "上方标签",
+                  "widget": "string"
+                },
+                {
+                  "name": "title",
+                  "label": "首页标题",
+                  "widget": "text"
+                },
+                {
+                  "name": "description",
+                  "label": "个人简介",
+                  "widget": "text"
+                },
+                {
+                  "name": "primary_label",
+                  "label": "论文按钮文字",
+                  "widget": "string"
+                },
+                {
+                  "name": "contact_label",
+                  "label": "联系按钮文字",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "research",
+              "label": "研究方向",
+              "widget": "list",
+              "summary": "{{fields.title}}",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "方向名称",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "介绍",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "publications",
+              "label": "论文与海报（可拖动排序）",
+              "widget": "list",
+              "summary": "{{fields.title}}",
+              "fields": [
+                {
+                  "name": "year",
+                  "label": "年份",
+                  "widget": "string"
+                },
+                {
+                  "name": "title",
+                  "label": "论文标题",
+                  "widget": "text"
+                },
+                {
+                  "name": "authors",
+                  "label": "作者（按原顺序）",
+                  "widget": "text",
+                  "required": false
+                },
+                {
+                  "name": "venue",
+                  "label": "期刊 / 会议",
+                  "widget": "string"
+                },
+                {
+                  "name": "details",
+                  "label": "卷号、页码或补充信息",
+                  "widget": "text",
+                  "required": false
+                },
+                {
+                  "name": "url",
+                  "label": "DOI / 论文链接",
+                  "widget": "string",
+                  "required": false,
+                  "pattern": [
+                    "^https?://[^\\s]+$",
+                    "请填写 http:// 或 https:// 开头的完整网址"
+                  ]
+                },
+                {
+                  "name": "corresponding",
+                  "label": "通讯作者",
+                  "widget": "boolean",
+                  "default": false,
+                  "required": false
+                }
+              ]
+            },
+            {
+              "name": "experience",
+              "label": "教育与工作经历（可拖动排序）",
+              "widget": "list",
+              "summary": "{{fields.institution}}",
+              "fields": [
+                {
+                  "name": "period",
+                  "label": "时间",
+                  "widget": "string"
+                },
+                {
+                  "name": "institution",
+                  "label": "学校 / 机构",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "学位、职位与经历",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "awards",
+              "label": "奖项与奖学金",
+              "widget": "list",
+              "summary": "{{fields.title}}",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "名称",
+                  "widget": "string"
+                },
+                {
+                  "name": "details",
+                  "label": "年份 / 补充信息",
+                  "widget": "string"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import { renderHomepage } from './build.mjs';
+const base = {profile:{name:'A & B',chinese_name:'中',label:'x',role:'r',department:'d',school:'s',university:'u',location:'l',photo:'static/assets/img/photo.jpg',email:'a@example.com',secondary_email:'b@example.com',github:'https://github.com/a'},hero:{eyebrow:'e',title:'<script>',description:'x',primary_label:'go',contact_label:'mail'},research:[{title:'R',description:'D'}],publications:[{year:'2024',title:'T',authors:'Wang Y',venue:'V',details:'1',url:'https://doi.org/x',corresponding:false}],experience:[{period:'P',institution:'I',description:'line1\nline2'}],awards:[{title:'A',details:'D'}]};
+const out = renderHomepage(base, '<h1>{{profile.name}}</h1><h2>{{hero.title}}</h2>{{research}}{{publications}}{{experience}}{{awards}}');
+assert.match(out, /A &amp; B/); assert.doesNotMatch(out, /<script>/); assert.match(out, /&lt;script&gt;/); assert.match(out, /<strong>Wang Y<\/strong>/); assert.match(out, /line1<br>line2/);
+assert.match(renderHomepage({...base, publications:[{...base.publications[0], corresponding:true}]}, '{{publications}}'), /Corresponding author\./);
+assert.doesNotMatch(renderHomepage({...base, publications:[{...base.publications[0], corresponding:false}]}, '{{publications}}'), /Corresponding author\./);
+assert.throws(() => renderHomepage({...base, profile:{...base.profile, github:'javascript:alert(1)'}}, '{{profile.github}}'), /Unsafe URL/);
+for (const photo of ['..\\secret', '../secret', 'static/assets/%2e%2e/secret', 'javascript:alert(1)', 'data:image/png;base64,x', 'https://example.com/x']) assert.throws(() => renderHomepage({...base, profile:{...base.profile, photo}}, '{{profile.photo}}'), /Unsafe asset path|Missing asset/);
+for (const email of ['bad header@example.com', 'a@example.com:inject', 'a@example.com\r\nBcc:x']) assert.throws(() => renderHomepage({...base, profile:{...base.profile, email}}, '{{profile.email}}'), /Unsafe email/);
+console.log('build tests passed');
