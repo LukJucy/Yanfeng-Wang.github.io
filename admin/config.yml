@@ -90,6 +90,27 @@
                     "^https://github\\.com/[^\\s]+$",
                     "请填写完整的 GitHub HTTPS 网址"
                   ]
+                },
+                {
+                  "name": "linkedin",
+                  "label": "LinkedIn",
+                  "widget": "string",
+                  "required": false,
+                  "pattern": ["^https://www\\.linkedin\\.com/[^\\s]+$", "请填写完整的 LinkedIn HTTPS 网址"]
+                },
+                {
+                  "name": "orcid",
+                  "label": "ORCID",
+                  "widget": "string",
+                  "required": false,
+                  "pattern": ["^https://orcid\\.org/[^\\s]+$", "请填写完整的 ORCID HTTPS 网址"]
+                },
+                {
+                  "name": "scholar",
+                  "label": "Google Scholar",
+                  "widget": "string",
+                  "required": false,
+                  "pattern": ["^https://scholar\\.google\\.com/[^\\s]+$", "请填写完整的 Google Scholar HTTPS 网址"]
                 }
               ]
             },
@@ -219,8 +240,8 @@
               ]
             },
             {
-              "name": "awards",
-              "label": "奖项与奖学金",
+              "name": "interests",
+              "label": "兴趣（可拖动排序）",
               "widget": "list",
               "summary": "{{fields.title}}",
               "fields": [
@@ -230,9 +251,10 @@
                   "widget": "string"
                 },
                 {
-                  "name": "details",
-                  "label": "年份 / 补充信息",
-                  "widget": "string"
+                  "name": "description",
+                  "label": "介绍（可留空）",
+                  "widget": "text",
+                  "required": false
                 }
               ]
             }

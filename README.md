@@ -8,7 +8,7 @@ Content editor: https://lukjucy.github.io/Yanfeng-Wang.github.io/admin/
 
 1. 打开后台，使用有该站点权限的 Decap Turbo 账号登录。
 2. 点击「学术主页」→「主页内容」。
-3. 在表单中修改个人资料、简介、论文、教育经历、奖项；列表可以增加、删除和拖动排序，头像可以上传。
+3. 在表单中修改个人资料、简介、社交链接、论文、教育经历和兴趣；兴趣列表可以增加、删除和拖动排序，头像可以上传。
 4. 右侧查看内容预览，点击发布保存到 GitHub 的 `main` 分支。
 5. 等待 GitHub Actions 的 **Build and publish academic homepage** 成功，刷新主页即可看到修改。发布失败时，线上仍保留上一个成功版本。
 

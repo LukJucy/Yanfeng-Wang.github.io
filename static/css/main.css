@@ -124,3 +124,7 @@ footer a{display:inline-block;margin-top:.5rem}
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; }
  }
 
+.social-link{display:flex;align-items:center;gap:.7rem;color:var(--teal-dark);overflow-wrap:anywhere}.social-icon{display:inline-flex;width:1.35rem;height:1.35rem;flex:none}.social-link:hover{text-decoration:underline}.interest-items{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem}.interest-item{border-top:3px solid var(--teal);padding-top:1rem}.interest-item h3{margin:0;font:600 1.4rem "Source Serif 4",Georgia,serif}.interest-item p{margin:.6rem 0 0;color:var(--muted);font-size:.92rem;white-space:pre-line}@media(max-width:520px){.interest-items{grid-template-columns:1fr}}
+
+
+.social-link[href*="orcid.org"] .social-icon{color:#a6ce39}.social-link[href*="linkedin.com"] .social-icon{color:#0077b5}

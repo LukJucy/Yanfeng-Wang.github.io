@@ -11,7 +11,10 @@
     "location": "Dublin, Ireland",
     "role": "PhD Researcher",
     "email": "wangy82@tcd.ie",
-    "chinese_name": "王彦峰"
+    "chinese_name": "王彦峰",
+    "linkedin": "https://www.linkedin.com/in/yanfeng-wang-4156b8290/",
+    "orcid": "https://orcid.org/0009-0002-2549-7044",
+    "scholar": "https://scholar.google.com/citations?user=IcQL0oIAAAAJ&hl=en"
   },
   "hero": {
     "eyebrow": "Welcome",
@@ -113,5 +116,10 @@
       "description": "Bachelor of New Energy Science and Technology"
     }
   ],
-  "awards": []
+  "interests": [
+    {"title": "American football", "description": ""},
+    {"title": "football", "description": ""},
+    {"title": "badminton", "description": ""},
+    {"title": "powerlifting", "description": ""}
+  ]
 }

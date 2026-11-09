@@ -31,6 +31,19 @@ test('new posters and cleared optional fields can publish', () => {
   assert.match(html,/Poster fixture/);
   assert.doesNotMatch(html,/mailto:undefined|mailto:"/);
 });
+test('interest descriptions can be added, cleared, and omitted through CMS', () => {
+  const draft = structuredClone(data);
+  draft.interests = [{title:'Interest fixture',description:'Line one\nLine two'}, {title:'Blank fixture'}];
+  check(config.collections[0].files[0].fields,draft);
+  const template = fs.readFileSync(new URL('../templates/homepage.html',import.meta.url),'utf8');
+  let html = renderHomepage(draft,template);
+  assert.match(html,/Line one<br>Line two/);
+  assert.match(html,/Blank fixture/);
+  assert.doesNotMatch(html,/Awards &amp; scholarships/);
+  draft.interests[0].description='';
+  html=renderHomepage(draft,template);
+  assert.doesNotMatch(html,/Line one/);
+});
 test('custom preview renders all collections and unsaved uploaded images', () => {
   let render;
   const window = {h:(tag,props,...children)=>({tag,props,children}),CMS:{registerPreviewStyle(){},registerPreviewTemplate(name,component){assert.equal(name,'homepage');render=component;}}};
@@ -39,5 +52,5 @@ test('custom preview renders all collections and unsaved uploaded images', () =>
   const output=JSON.stringify(preview);
   assert.match(output,/blob:unsaved-image/);
   for(const paper of data.publications) assert.ok(output.includes(paper.title));
-  for(const award of data.awards) assert.ok(output.includes(award.title));
+  for(const interest of data.interests) assert.ok(output.includes(interest.title));
 });
