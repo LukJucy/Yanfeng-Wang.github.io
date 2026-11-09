@@ -1,7 +1,7 @@
 {
   "backend": {
     "name": "turbo-github",
-    "turbo_site_id": "",
+    "turbo_site_id": "27800d6a-b2c0-4df0-863a-71268e647c53",
     "branch": "main"
   },
   "locale": "zh_Hans",
