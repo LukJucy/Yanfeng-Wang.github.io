@@ -3,7 +3,6 @@
     "github": "https://github.com/LukJucy",
     "name": "Yanfeng Wang",
     "university": "Trinity College Dublin",
-    "secondary_email": "yfangwang329@qq.com",
     "photo": "static/assets/img/photo.jpg",
     "department": "Electronic & Electrical Engineering",
     "label": "Academic researcher",
@@ -117,9 +116,21 @@
     }
   ],
   "interests": [
-    {"title": "American football", "description": ""},
-    {"title": "football", "description": ""},
-    {"title": "badminton", "description": ""},
-    {"title": "powerlifting", "description": ""}
+    {
+      "title": "American football",
+      "description": ""
+    },
+    {
+      "title": "football",
+      "description": ""
+    },
+    {
+      "title": "badminton",
+      "description": ""
+    },
+    {
+      "title": "powerlifting",
+      "description": ""
+    }
   ]
 }
